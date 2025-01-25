@@ -57,3 +57,15 @@ helm install argocd argo/argo-cd \
  --set global.image.imagePullPolicy=IfNotPresent
 
  ```
+
+ ## skopeo 
+
+```bash
+
+skopeo inspect docker://docker-upstream.apple.com/kube-apiserver:v1.28.2 --override-arch amd64 --override-os linux
+
+skopeo inspect docker://quay.io/argoproj/argocd:v2.13.3 --override-arch amd64 --override-os linux
+
+skopeo inspect docker://docker-upstream.apple.com/argoproj/argocd:v2.13.3 --override-arch amd64 --override-os linux
+
+```
