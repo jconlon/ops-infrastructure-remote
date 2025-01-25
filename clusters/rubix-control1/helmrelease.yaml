@@ -13,6 +13,7 @@ spec:
         kind: HelmRepository
         name: argo
         namespace: flux-system
+  timeout: 10m
   values:
     global:
       image:
