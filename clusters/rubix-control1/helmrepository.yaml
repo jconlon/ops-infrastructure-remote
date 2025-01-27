@@ -1,8 +1,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
-  name: apple-remote-mirror
+  name: apple-helm-remote
   namespace: flux-system
 spec:
   interval: 1h
-  url: https://apple-remote-mirror
+  url: https://artifacts.apple.com/helm-remote/
