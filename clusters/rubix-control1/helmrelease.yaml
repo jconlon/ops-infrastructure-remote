@@ -8,12 +8,15 @@ spec:
   chart:
     spec:
       chart: argo-cd
-      version: "5.46.7"
+      version: "7.7.16" 
       sourceRef:
         kind: HelmRepository
-        name: argo
+        name: apple-remote-mirror
         namespace: flux-system
   timeout: 10m
+  targetNamespace: argocd
+  install:
+    createNamespace: true
   values:
     global:
       image:

@@ -16,6 +16,11 @@ export PROJECT_ID=$(gcloud config get-value project)
 
 ## Clusters
 
+### Helm targets
+
+helm show values apple-remote-mirror/argo-cd 
+
+
 ### rubix-control1
 
 Files and Their Purposes
